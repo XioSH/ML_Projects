@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "layer": [{"data": {"url": "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/us-10m.json", "format": {"feature": "states", "type": "topojson"}}, "mark": {"type": "geoshape", "fill": "lightblue", "stroke": "white"}, "projection": {"type": "albersUsa"}}, {"data": {"name": "data-bbaa5ef0a3684e6b15a751ac6b336f92"}, "mark": {"type": "circle"}, "encoding": {"color": {"value": "red"}, "latitude": {"field": "latitude", "type": "quantitative"}, "longitude": {"field": "longitude", "type": "quantitative"}, "size": {"field": "number", "title": "\u673a\u573a\u6570\u91cf", "type": "quantitative"}, "tooltip": [{"field": "state2", "type": "nominal"}, {"field": "number", "type": "quantitative"}]}, "title": "\u7f8e\u56fd\u673a\u573a\u6570\u91cf"}], "height": 300, "width": 500, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-bbaa5ef0a3684e6b15a751ac6b336f92": [{"latitude": 61.33431076155894, "longitude": -152.68717293231938, "number": 263, "state2": "AK"}, {"latitude": 32.63330898452055, "longitude": -86.76992225205478, "number": 73, "state2": "AL"}, {"latitude": 35.07320609648649, "longitude": -92.23667599851352, "number": 74, "state2": "AR"}, {"latitude": 14.243716390000001, "longitude": -169.9348184, "number": 3, "state2": "AS"}, {"latitude": 34.000363902881354, "longitude": -111.4947230881356, "number": 59, "state2": "AZ"}, {"latitude": 36.98096231302439, "longitude": -120.09465190439025, "number": 205, "state2": "CA"}, {"latitude": 39.19933508489796, "longitude": -105.6264690612245, "number": 49, "state2": "CO"}, {"latitude": 15.6036509025, "longitude": -145.58963519999998, "number": 4, "state2": "CQ"}, {"latitude": 41.55935152, "longitude": -72.70859701866668, "number": 15, "state2": "CT"}, {"latitude": 38.86872333, "longitude": -77.00747583, "number": 1, "state2": "DC"}, {"latitude": 39.247358722, "longitude": -75.549719612, "number": 5, "state2": "DE"}, {"latitude": 28.1985112087, "longitude": -81.99087211989999, "number": 100, "state2": "FL"}, {"latitude": 32.694875200206184, "longitude": -83.45712495144329, "number": 97, "state2": "GA"}, {"latitude": 13.48345, "longitude": -144.7959825, "number": 1, "state2": "GU"}, {"latitude": 20.988745763125, "longitude": -157.20869994375, "number": 16, "state2": "HI"}, {"latitude": 41.94750209076923, "longitude": -93.4316228774359, "number": 78, "state2": "IA"}, {"latitude": 44.58138512162162, "longitude": -114.94265784054055, "number": 37, "state2": "ID"}, {"latitude": 40.26787428, "longitude": -88.9556687625, "number": 88, "state2": "IL"}, {"latitude": 40.163398602769234, "longitude": -86.19105122276922, "number": 65, "state2": "IN"}, {"latitude": 38.42146234666667, "longitude": -98.08560158871795, "number": 78, "state2": "KS"}, {"latitude": 37.5194446172, "longitude": -85.4926812832, "number": 50, "state2": "KY"}, {"latitude": 31.189169711999998, "longitude": -92.05054183327272, "number": 55, "state2": "LA"}, {"latitude": 42.1798975, "longitude": -71.55575236133333, "number": 30, "state2": "MA"}, {"latitude": 38.97602171333333, "longitude": -76.81425541777779, "number": 18, "state2": "MD"}, {"latitude": 44.845315065294116, "longitude": -69.25283734441176, "number": 34, "state2": "ME"}, {"latitude": 43.67083025414893, "longitude": -84.88541961287234, "number": 94, "state2": "MI"}, {"latitude": 45.6859403, "longitude": -94.22007025595505, "number": 89, "state2": "MN"}, {"latitude": 38.27735146378379, "longitude": -92.32851701945945, "number": 74, "state2": "MO"}, {"latitude": 32.87465806333333, "longitude": -89.54541928597222, "number": 72, "state2": "MS"}, {"latitude": 47.07493570366197, "longitude": -110.15612226619719, "number": 71, "state2": "MT"}, {"latitude": 35.49967047388889, "longitude": -79.10223033152778, "number": 72, "state2": "NC"}, {"latitude": 47.53318373903846, "longitude": -99.87728714653846, "number": 52, "state2": "ND"}, {"latitude": 41.27923812027397, "longitude": -98.79016148986301, "number": 73, "state2": "NE"}, {"latitude": 43.40460396857143, "longitude": -71.65968882928571, "number": 14, "state2": "NH"}, {"latitude": 40.21945002428572, "longitude": -74.63439847628571, "number": 35, "state2": "NJ"}, {"latitude": 34.437567608627454, "longitude": -105.96413909215686, "number": 51, "state2": "NM"}, {"latitude": 38.6258707025, "longitude": -116.7215876, "number": 32, "state2": "NV"}, {"latitude": 42.48277663484536, "longitude": -75.35484467360826, "number": 97, "state2": "NY"}, {"latitude": 40.3966796334, "longitude": -82.8862456198, "number": 100, "state2": "OH"}, {"latitude": 35.52994365460784, "longitude": -97.30023279715687, "number": 102, "state2": "OK"}, {"latitude": 44.34036465859649, "longitude": -121.88639315438597, "number": 57, "state2": "OR"}, {"latitude": 40.69615224183099, "longitude": -77.75397075535211, "number": 71, "state2": "PA"}, {"latitude": 18.303694975454547, "longitude": -66.1364047709091, "number": 11, "state2": "PR"}, {"latitude": 41.54868175833334, "longitude": -71.49908652833334, "number": 6, "state2": "RI"}, {"latitude": 33.9143985675, "longitude": -80.74432705576922, "number": 52, "state2": "SC"}, {"latitude": 44.298703372105265, "longitude": -99.72353599438597, "number": 57, "state2": "SD"}, {"latitude": 35.815482384285716, "longitude": -86.44272393228572, "number": 70, "state2": "TN"}, {"latitude": 31.484807044066986, "longitude": -98.1336945492823, "number": 209, "state2": "TX"}, {"latitude": 39.25406539657143, "longitude": -111.57359078285715, "number": 35, "state2": "UT"}, {"latitude": 37.5184503606383, "longitude": -78.43496725170212, "number": 47, "state2": "VA"}, {"latitude": 18.092371056, "longitude": -64.843413056, "number": 5, "state2": "VI"}, {"latitude": 44.07502047, "longitude": -72.75660341846154, "number": 13, "state2": "VT"}, {"latitude": 47.468242474307694, "longitude": -120.97048133384617, "number": 65, "state2": "WA"}, {"latitude": 44.34315650797619, "longitude": -89.70765831964286, "number": 84, "state2": "WI"}, {"latitude": 38.67690177041667, "longitude": -80.83515037125001, "number": 24, "state2": "WV"}, {"latitude": 42.8602263725, "longitude": -107.65900348125, "number": 32, "state2": "WY"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
