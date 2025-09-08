@@ -1,0 +1,9 @@
+text
+I come from China.
+My maijor is math.
+Life is short, I use Python.
+Python is a programming language.
+Python, R and Matlab, I love Python.
+My maijor is computer. His maijor is computer technology.
+I come from Shanghai China.
+Life is short and happy in time.

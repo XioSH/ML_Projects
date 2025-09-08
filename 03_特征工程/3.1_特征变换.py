@@ -191,7 +191,7 @@ plt.title('$ 1/x $')
 plt.subplots_adjust(hspace=0.4)
 plt.show()
 '''
-'''正态变换'''
+'''正态变换
 np.random.seed(12)
 x = 1+np.random.poisson(lam=1.5, size=5000)+np.random.rand(5000)
 QTn = preprocessing.QuantileTransformer(output_distribution='normal', random_state=0)
@@ -205,3 +205,4 @@ plt.subplot(1, 2, 2)
 plt.hist(QTnx, bins=50)
 plt.title('正态变换后数据分布')
 plt.show()
+'''
